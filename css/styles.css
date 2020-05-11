@@ -1,0 +1,675 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+@font-face {
+font-family: "Montserrat"; 
+src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+body {
+  font-family: "Montserrat"; 
+}
+
+.up_header {
+  width: 100%;
+  background: #F6F2F4;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+}
+
+
+.company_name {
+  color: #241e20;
+  font-size: 45px;
+  margin-left: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.phone_up_header a {
+  color: #241e20;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.phone_up_header a:hover {
+  color: #9e7119;
+  text-decoration: none;
+}
+
+
+.fast_contact {
+  color: #1E253E;
+  min-height: 90px;
+  font-size: 20px;
+  padding-top: 25px;
+  margin-right: 40px;
+
+}
+
+
+.header {
+  width: 100%;
+
+}
+
+.header nav.desk,
+.header nav.mob {
+  width: 100%;
+  background-color: #1E253E; /*темно-синий цвет навигационной панели */
+  height: 60px;
+
+}
+
+
+nav.desk ul {
+  width: 100%;
+  list-style: none;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+}
+ 
+
+nav.desk ul li {
+  width: 11.29%;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-size: 16px;
+}
+ 
+
+
+.header .desk ul li:hover,
+.header .mob ul li:hover {
+  background-color: #3b7da8; /* Светло-синий */
+}
+ 
+nav ul li a {
+  color: #f1f1ee;
+  text-decoration: none;
+}
+
+
+ 
+.mob,
+.hamburger-btn {
+  display: none;
+}
+
+
+
+
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  border-bottom: 345px solid rgba(255,255,255,0.5);
+  border-left: 0 solid transparent;
+  border-right: 250px solid transparent;
+  height: 0;
+  width: 500px;
+  color: #1E253E;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+.services /*Блок "Услуги"*/ { 
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background: #F6F2F4;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  color: #1E253E;
+  font-size: 48px;
+  text-transform: uppercase;
+align-items: center;
+
+  /*Центрирование по горизонтали*/
+}
+
+
+
+
+h1 {
+  color: #1E253E;
+  font-size: 25px;
+  text-align: center;
+} 
+
+.portfolio ul,
+.portfolio li {
+  padding: 0;
+  list-style-type: none;  
+
+}
+
+
+.portfolio li {
+  display: inline-block;
+  max-width: 400px;
+  margin: 1%; 
+  position: relative;
+  overflow: hidden;
+
+}
+
+.portfolio img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.descr {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 175px;
+  text-align: center;
+  opacity: 1;
+  transition: all .5s;
+} 
+
+.portfolio li:hover .descr {
+background-color: rgba(0,0,0,.5); 
+
+}
+
+
+
+.services_item {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  opacity: 1;
+
+}
+
+
+.portfolio {
+text-align: center;
+background-image: url(../images/topographic-map-contour-background-contour-map-vector-geographic-world-topography-map-grid-abstract.jpg);
+
+width: 100%;
+}
+
+
+
+
+
+
+.our_projects /*Блок "Наши проекты"*/ { 
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background: #1E253E;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 48px;
+  text-transform: uppercase;
+  align-items: center;
+
+  /*Центрирование по горизонтали*/
+}
+
+
+.descr_projects {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+display: flex;
+flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background: rgb(0,0,0,0.2);
+  transition: all .5s;
+  opacity: 1;
+
+} 
+
+.descr_projects:hover {
+background: rgb(0,0,0,0.8);
+}
+
+
+.object_works_title {
+ border-bottom: 5px solid yellow;
+ text-transform: uppercase;
+ font-size: 22px;
+ text-align: center;
+}
+
+.object_works_descr {
+ font-size: 18px;
+ text-align: center;
+}
+
+
+
+
+.align_slider {
+  margin-top: 20px;
+background: #F6F2F4;
+}
+
+
+
+
+
+
+.about_us_block {
+  width: 100%;
+  height: 700px;
+background: #F6F2F4;
+}
+
+
+
+.about_us_block_text {
+  margin: 0 20px;
+  color: #241e20;
+  font-size: 20px; 
+
+}
+
+.about_us_block_text p {
+padding-bottom: 20px;  
+}
+
+.about_us_photo {
+max-width: 45%;
+display: block;
+
+}
+
+
+
+
+.up_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
+  height: 180px;
+  background: #1E253E;
+  color: #F6F2F4;
+
+}
+
+
+.bottom_footer {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #F6F2F4;
+  color: #1E253E;
+  text-align: center;
+}
+
+.phone_footer a{
+text-decoration: none;
+color: white;
+}
+
+.up_footer li a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.up_footer li a:hover {
+  color: yellow;
+}
+
+.up_footer li {
+  list-style: none;
+
+}
+
+
+
+.map_and_text {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #F6F2F4;
+}
+
+.map {
+  width: 50%;
+}
+
+.text {
+  max-width: 600px;
+}
+
+
+
+
+
+
+
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+}
+
+input, 
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus, 
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 7em;
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+
+  background-color: #3b7da8; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #9e7119;
+}
+
+
+
+.h1_title_contacts {
+height: 150px;
+background-image: url(../images/topographic-map-contour-background-contour-map-vector-geographic-world-topography-map-grid-abstract.jpg);
+margin: 0;
+text-align: center;
+vertical-align: middle;
+line-height: 150px;
+text-transform: uppercase;
+font-size: 48px;
+}
+
+.h2_title_contacts_1 {
+height: 100px;
+background-color: #3b7da8;
+color: white;
+margin-bottom: 20px;
+text-align: center;
+vertical-align: middle;
+line-height: 100px;
+text-transform: uppercase;
+font-size: 24px;
+}
+
+.h2_title_contacts {
+  height: 100px;
+  background-color: #3b7da8;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 24px;
+  }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-image: url(../images/topographic-map-contour-background-contour-map-vector-geographic-world-topography-map-grid-abstract.jpg);
+
+width: 100%;
+}
+
+.card_1 {
+  width: 250px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3%;
+}
+
+.card_1_icon {
+  display: flex;
+  font-size: 50px;
+  align-self: center;
+  margin-top: -42px;
+  margin-bottom: 10px; 
+
+}
+.card_1_icon i {
+  line-height: 1.55;
+
+}
+
+@media only screen and (max-width: 800px) {
+  nav.desk {
+    display: none;
+  }
+  nav.mob,
+  .hamburger-btn {
+    display: block;
+  }
+   
+
+   .mob, .company_name {
+  margin: auto;
+}
+
+
+.mob, .fast_contact {
+  display: none;
+}
+
+.hamburger-btn {
+  position: relative;
+}
+ 
+
+.hamburger-btn .fa-bars,
+.hamburger-btn .fa-times {
+  position: absolute;
+  right: 18px;
+  top: -3px;
+  font-size: 65px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.mob ul {
+  margin-top: 60px;
+  display: none;
+  background: rgba(36, 30, 32, 0.9);
+  color: #f1f1ee;
+
+}
+ 
+
+.mob li {
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+   
+
+.mob ul.active {
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+
+.mob, .goals, .email_up_header {
+  display: none;
+
+}
+
+
+.mob, .up_header {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+
+.mob .phone_up_header a {
+  color: #241e20;
+  text-decoration: none;
+  font-size: 2px;
+  padding-top: 12px; 
+  width: 50%;
+}
+
+.mob .phone_up_header img {
+  color: #241e20;
+  padding-top: 12px; 
+}
+
+
+
+.bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  border-bottom: 345px solid rgba(255,255,255,0.5);
+  border-left: 0 solid transparent;
+  border-right: 250px solid transparent;
+  height: 0;
+  width: 300px;
+  color: #1E253E;
+  font-size: 18px;
+}
+
+
+.about_us_photo {
+max-width: 70%;
+display: block;
+
+}
+
+.object_works_descr,.object_works_title {
+  font-size: 12px;
+  text-align: center;
+
+} 
+
+.up_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 290px;
+ background: #1E253E;
+  color: #F6F2F4;
+
+}
+
+.map {
+  width: 100%;
+}
+.feedback {
+text-align: center;
+}
+
+.cards {
+  flex-direction: column;
+}
+
+.card_1 {
+margin-top: 50px; 
+}
+
+}
+
+
